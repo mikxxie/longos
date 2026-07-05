@@ -20,3 +20,5 @@ BR2_PACKAGE_HOST_QEMU_SYSTEM_MODE=y
 # instead of curl we're using libcurl as curl appears to be a legacy name used
 BR2_PACKAGE_LIBCURL=y
 BR2_PACKAGE_LIBCURL_CURL=y
+BR2_TARGET_GENERIC_GETTY_PROMPT="longos login: "
+BR2_ROOTFS_OVERLAY="board/qemu/aarch64-virt/rootfs-overlay"
