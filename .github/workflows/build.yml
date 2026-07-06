@@ -17,7 +17,9 @@ jobs:
       - name: Cache Toolchain
         uses: actions/cache@v4
         with:
-          path: output/host
+          path: |
+              output
+              dl
           key: ${{ runner.os }}-toolchain-${{ hashFiles('defconfig') }}
           restore-keys: |
             ${{ runner.os }}-toolchain-
